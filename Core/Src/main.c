@@ -20,6 +20,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "i2c.h"
+#include "tim.h"
 #include "usb_device.h"
 #include "gpio.h"
 
@@ -94,14 +95,15 @@ int main(void)
   MX_GPIO_Init();
   MX_USB_DEVICE_Init();
   MX_I2C2_Init();
+  MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
 
   setup();
 
-  // /* USER CODE END 2 */
+  /* USER CODE END 2 */
 
-  // /* Infinite loop */
-  // /* USER CODE BEGIN WHILE */
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
   while (1)
   {
 
